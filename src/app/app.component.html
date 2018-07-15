@@ -1,23 +1,5 @@
-<mat-toolbar color="primary">
-  <span>Angular Flex Layout & Material Demo App</span>
-</mat-toolbar>
-
-<div fxLayout="column" class="bigger">
-  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" style="height:40px; min-height:40px;">
-    <button mat-button [matMenuTriggerFor]="navbar">Menu</button>
-    <mat-menu #navbar="matMenu">
-      <button mat-raised-button color="primary" [routerLink]="['layout']">Layout</button>
-      <button mat-raised-button color="primary" [routerLink]="['']">Static</button>
-      <button mat-raised-button color="primary" [routerLink]="['grid']"> Grids</button>
-      <button mat-raised-button color="primary" [routerLink]="['responsive']"> Responsive</button>
-      <button mat-raised-button color="primary" [routerLink]="['issues']"> Github</button>
-      <button mat-raised-button color="primary" [routerLink]="['stackoverflow']"> StackOverflow</button>
-    </mat-menu>
-  </div>
-</div>
-
-<div class="demo-content">
-  <router-outlet></router-outlet>
-</div>
-
-<div>abc</div>
+<mat-sidenav-container>
+    <app-navbar></app-navbar>
+    
+    <router-outlet></router-outlet>
+</mat-sidenav-container>

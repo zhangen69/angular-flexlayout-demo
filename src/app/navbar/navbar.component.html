@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" 
+  fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign.xs="start center">
+  <span class="navbar-title">Angular Demo App</span>
+  <div fxLayout="column" class="bigger">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" style="height:40px; min-height:40px;">
+      <button mat-stroked-button [matMenuTriggerFor]="navbar">Navigation
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <mat-menu #navbar="matMenu" fxLayout="column" class="menu-wrapper">
+        <div fxLayout="column" fxFlex="100">
+          <button mat-menu-item color="primary" fxFlex="100" fxLayoutAlign="start center" [routerLink]="['layout']"><mat-icon>wallpaper</mat-icon> Layout</button>
+        </div>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
