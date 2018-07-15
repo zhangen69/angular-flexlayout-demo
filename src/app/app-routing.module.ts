@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
-import { SidebarDirective } from './sidebar.directive';
 
 const routes: Routes = [
   { path: 'layout', component: LayoutComponent },
@@ -9,12 +8,9 @@ const routes: Routes = [
 
 @NgModule({
    imports: [
-      RouterModule.forRoot(routes
+      RouterModule.forRoot(routes)
    ],
-   declarations: [
-      SidebarDirective
-   ]
-})],
+   declarations: [],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
