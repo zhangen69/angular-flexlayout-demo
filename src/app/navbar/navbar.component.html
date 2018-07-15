@@ -1,7 +1,7 @@
-<mat-toolbar color="primary" 
-  fxLayout
-  fxLayout.xs="column"
-  fxLayoutAlign.xs="start center">
+<mat-toolbar color="primary">
+  <button mat-button class="app-menu-button" (click)="toggleSidenav()">
+      <i class="material-icons">menu</i>
+    </button>
   <span class="navbar-title">Angular Demo App</span>
   <div fxLayout="column" class="bigger">
     <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" style="height:40px; min-height:40px;">

@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { LayoutComponent } from './layout/layout.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       LayoutComponent,
-      NavbarComponent
+      NavbarComponent,
+      SidebarComponent
    ],
    imports: [
       BrowserModule,
