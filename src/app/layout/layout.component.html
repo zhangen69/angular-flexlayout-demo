@@ -1,0 +1,31 @@
+<!-- <mat-card class="card-demo" (click)="toggleDirection()">
+  <mat-card-title>'Flex' to Fill Row</mat-card-title>
+  <mat-card-subtitle>Simple row using "flex" on 3rd element to fill available main axis.
+  </mat-card-subtitle>
+  <mat-card-content>
+    <div class="containerX">
+      <div [fxLayout]="direction" (click)="toggleDirection()" class="colored box"
+           style="cursor: pointer;">
+        <div [fxFlex]="someValue"> fxFlex="20"</div>
+        <div fxFlex="60"> fxFlex="60"</div>
+        <div fxFlex> fxFlex</div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="hint">&lt;div fxLayout="{{ direction }}" &gt;</div>
+  </mat-card-footer>
+</mat-card> -->
+
+<h3>Flex Layout</h3>
+
+<div class="containerX">
+  <div class="container">
+    <div [fxLayout]="direction + ' wrap'">
+      <div fxFlex="90">Flex: 90</div>
+      <div fxFlex="10">Flex: 10</div>
+      <div fxFlex="50">Flex: 50</div>
+      <div fxFlex>Flex auto</div>
+    </div>
+  </div>
+</div>
