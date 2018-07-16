@@ -1,5 +1,9 @@
-.navbar-title {
+/* .navbar-title {
     margin-right: 15px;
     max-width: 100%;
     overflow: hidden;
+} */
+.app-menu-button {
+    padding: 0;
+    min-width: 50px;
 }
