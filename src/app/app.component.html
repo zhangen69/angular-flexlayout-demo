@@ -1,6 +1,10 @@
-<mat-sidenav-container>
-    <app-sidebar></app-sidebar>
-    <app-navbar></app-navbar>
+<mat-sidenav-container style="height: 100%;">
+    <mat-sidenav #sidebar mode="over" color="primary">
+        <app-sidebar (toggle)="sidebar.toggle($event)"></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-navbar (toggle)="sidebar.toggle($event)"></app-navbar>
+    </mat-sidenav-content>
 
     <div class="app-content">
         <router-outlet></router-outlet>
