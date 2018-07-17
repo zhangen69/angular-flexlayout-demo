@@ -4,3 +4,11 @@
     padding: 10px;
     color: #fff;
 }
+
+mat-card {
+    margin: 15px;
+}
+
+mat-grid-tile {
+    background-color: #f00;
+}

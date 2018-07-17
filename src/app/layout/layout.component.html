@@ -1,31 +1,42 @@
-<h3>Flex Layout</h3>
+<div fxLayout="row wrap">
+    <mat-card fxFlex="50">
+        <mat-card-header>
+          <mat-card-title>
+            <h3>Flex Layout</h3>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container">
+            <div fxLayout="row wrap">
+              <div fxFlex="90">Flex: 90</div>
+              <div fxFlex="10">Flex: 10</div>
+              <div fxFlex="50">Flex: 50</div>
+              <div fxFlex>Flex auto</div>
+            </div>
+          </div>
+      
+          <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+            <div class="item item-1" fxFlex="15%">Item 1</div>
+            <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+            <div class="item item-3" fxFlex>Item 3</div>
+          </div>
+      
+          <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+            <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
+            <div class="item item-5" fxFlex="200px">Item 5</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      
+      <mat-card fxFlex="50">Simple card 1</mat-card>
+      <mat-card fxFlex="50">Simple card 2</mat-card>
+      <mat-card fxFlex="50">Simple card 3</mat-card>
+      <mat-card fxFlex="50">Simple card 4</mat-card>
 
-<div class="container">
-    <div fxLayout="row wrap">
-      <div fxFlex="90">Flex: 90</div>
-      <div fxFlex="10">Flex: 10</div>
-      <div fxFlex="50">Flex: 50</div>
-      <div fxFlex>Flex auto</div>
-    </div>
-  </div>
-
-  <div class="container"
-     fxLayout
-     fxLayout.xs="column"
-     fxLayoutAlign="center"
-     fxLayoutGap="10px"
-     fxLayoutGap.xs="0">
-  <div class="item item-1" fxFlex="15%">Item 1</div>
-  <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
-  <div class="item item-3" fxFlex>Item 3</div>
 </div>
-
-<div class="container"
-     fxLayout
-     fxLayout.xs="column"
-     fxLayoutAlign="center"
-     fxLayoutGap="10px"
-     fxLayoutGap.xs="0">
-  <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
-  <div class="item item-5" fxFlex="200px">Item 5</div>
-</div>
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
