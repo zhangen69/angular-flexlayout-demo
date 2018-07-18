@@ -1,0 +1,21 @@
+.nagivation-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 13px;
+}
+
+.navigation-item {
+    outline: none;
+    text-decoration: none;
+    color: #5a5a5a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 36px;
+}
+
+.navigation-item > mat-icon {
+    margin-right: 10px;
+}

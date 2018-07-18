@@ -3,9 +3,24 @@
     <span>Navigation</span>
   </mat-toolbar-row>
 
-  <mat-toolbar-row>
+  <mat-toolbar-row class="nagivation-list">
     <!-- <button mat-button (click)="toggle.emit()" class="app-sidebar-button"><mat-icon class="mat-18">close</mat-icon></button> -->
-    <button mat-button (click)="toggle.emit()" class="app-sidebar-button" [routerLink]="['/layout']" routerLinkActive="router-link-active" >Layout</button>
+    <!-- <button mat-button (click)="toggle.emit()" class="app-sidebar-button" [routerLink]="['/layout']" routerLinkActive="router-link-active" >Layout</button> -->
+    <a class="navigation-item" (click)="toggle.emit()" [routerLink]="['/layout']" routerLinkActive="router-link-active">
+      <mat-icon>account_circle</mat-icon> People
+    </a>
+    <a class="navigation-item" (click)="toggle.emit()" [routerLink]="['/layout']" routerLinkActive="router-link-active">
+      <mat-icon>palette</mat-icon> Appearance
+    </a>
+    <a class="navigation-item" (click)="toggle.emit()" [routerLink]="['/layout']" routerLinkActive="router-link-active">
+      <mat-icon>search</mat-icon> Search engine
+    </a>
+    <a class="navigation-item" (click)="toggle.emit()" [routerLink]="['/layout']" routerLinkActive="router-link-active">
+      <mat-icon>web</mat-icon> Default browser
+    </a>
+    <a class="navigation-item" (click)="toggle.emit()" [routerLink]="['/layout']" routerLinkActive="router-link-active">
+      <mat-icon>power_settings_new</mat-icon> On startup
+    </a>
   </mat-toolbar-row>
 
 </mat-toolbar>
